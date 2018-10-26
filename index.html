@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+    <title>Carramba!</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="blue_bg"> <a href="#" class="logo"></a></header>
+        <div class="container">
+            <h1 class="text-center ">¡Ay caramba!</h1>
+            <form class="form" action="">
+                <div class="block block_price">
+                    <div class="input_wrapper input_name"><span class="invisible">Текст</span><input class="input" type="text" placeholder="Название"></div>
+                    <div class="input_wrapper input_year"><span class="invisible">Текст</span><input class="input" placeholder="Год" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="4"></div>
+                    <div class="input_wrapper input_price"><span class="">Цена</span><input class="input" type="number" placeholder="руб."></div>
+                </div>
+                <div class="block">
+                    <div class="input_wrapper input_about"><span class="invisible">Текст</span><input class="input input_text" placeholder="Описание" type="text"></div>
+                </div>
+                <div class="block">
+                    <div class="input_wrapper input_colors"><span class="">Цвет</span>
+                        <div class="colors">
+                            <label class="container-radio">
+                                <input type="radio" name="color" value="01">
+                                <span class="checkmark" style="  background-color: #fff;"></span>
+                            </label>
+                            <label class="container-radio">
+                                <input type="radio" name="color" value="02">
+                                <span class="checkmark" style="  background-color: #000;"></span>
+                            </label>
+                            <label class="container-radio">
+                                <input type="radio" name="color" value="03">
+                                <span class="checkmark" style="  background-color: #cbcbcc;"></span>
+                            </label>
+                            <label class="container-radio">
+                                <input type="radio" name="color" value="04">
+                                <span class="checkmark" style="  background-color: #d74345;"></span>
+                            </label>
+                            <label class="container-radio">
+                                <input type="radio" name="color" value="05">
+                                <span class="checkmark"style="  background-color: #88c504;"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input_wrapper select-container"><span class="invisible">Текст</span>
+                        <div class="cube">
+                            <div class="cube-side">
+                                <select class="  custom-select" name="	" id="">
+                                    <option value="0" disabled selected hidden>Статус</option>
+                                    <option value="2">В наличии</option>
+                                    <option value="3">Ожидается</option>
+                                    <option value="4">Нет в наличии</option>
+                                </select></div>
+                        </div>
+                    </div>
+                    <div class="input_wrapper input_btn"><span class="invisible">Текст</span> <button class="btn">Отправить <i >	</i></button></div>
+                </div>
+            </form>
+            <div class="sheets">
+
+                <div class="table-wrapper">
+                    <h2><span></span>Автомобили в наличии</h2>
+                    <div class="table">
+                        <div class="row header">
+                            <div class="cell">
+                                Название
+                            </div>
+                            <div class="cell">
+                                Год
+                            </div>
+                            <div class="cell">
+                                Цвет
+                            </div>
+                            <div class="cell">
+                                Статус
+                            </div>
+                               <div class="cell">
+                                Цена
+                            </div>
+                               <div class="cell">
+                                <span class="invisible">Текст</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell" data-title="Name">
+                                1.6 MT Ambiente 85 л.с. МКПП
+                                <p class="dop">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</p>
+                            </div>
+                            <div class="cell" data-title="Year">
+                                2012
+                            </div>
+                            <div class="cell" data-title="Color">
+                                <span class="status status_black"></span>
+                            </div>
+                            <div class="cell" data-title="Status">
+                               Ожидается
+                            </div>
+                             <div class="cell" data-title="Price">
+                                <span class="price">1 689 000 </span> руб.
+                            </div>
+                             <div class="cell" data-title="Delete">
+                                <button class="delete_btn">Удалить</button>
+                            </div>
+                        </div>
+                                      <div class="row">
+                            <div class="cell" data-title="Name">
+                                1.6 MT Ambiente 85 л.с. МКПП
+                            </div>
+                            <div class="cell" data-title="Year">
+                                2012
+                            </div>
+                            <div class="cell" data-title="Color">
+                                <span class="status status_red"></span>
+                            </div>
+                            <div class="cell" data-title="Status">
+                               Ожидается
+                            </div>
+                             <div class="cell" data-title="Price">
+                                <span class="price">1 689 000 </span> руб.
+                            </div>
+                             <div class="cell" data-title="Delete">
+                                <button class="delete_btn">Удалить</button>
+                            </div>
+                        </div>
+                                      <div class="row">
+                            <div class="cell" data-title="Name">
+                                1.6 MT Ambiente 85 л.с. МКПП
+                            </div>
+                            <div class="cell" data-title="Year">
+                                2012
+                            </div>
+                            <div class="cell" data-title="Color">
+                                <span class="status status_white"></span>
+                            </div>
+                            <div class="cell" data-title="Status">
+                               Ожидается
+                            </div>
+                             <div class="cell" data-title="Price">
+                                <span class="price">1 689 000 </span> руб.
+                            </div>
+                             <div class="cell" data-title="Delete">
+                                <button class="delete_btn">Удалить</button>
+                            </div>
+                        </div>
+                                                  <div class="row">
+                            <div class="cell" data-title="Name">
+                                1.6 MT Ambiente 85 л.с. МКПП
+                            </div>
+                            <div class="cell" data-title="Year">
+                                2012
+                            </div>
+                            <div class="cell" data-title="Color">
+                                <span class="status status_green"></span>
+                            </div>
+                            <div class="cell" data-title="Status">
+                               В наличии
+                            </div>
+                             <div class="cell" data-title="Price">
+                                <span class="price">1 689 000 </span> руб.
+                            </div>
+                             <div class="cell" data-title="Delete">
+                                <button class="delete_btn">Удалить</button>
+                            </div>
+                        </div>
+                                                  <div class="row">
+                            <div class="cell" data-title="Name">
+                                1.6 MT Ambiente 85 л.с. МКПП 1.6 PowerShift 
+                            </div>
+                            <div class="cell" data-title="Year">
+                                2012
+                            </div>
+                            <div class="cell" data-title="Color">
+                                <span class="status status_gray"></span>
+                            </div>
+                            <div class="cell" data-title="Status">
+                               Нет в наличии
+                            </div>
+                             <div class="cell" data-title="Price">
+                                <span class="price">1 689 000 </span> руб.
+                            </div>
+                             <div class="cell" data-title="Delete">
+                                <button class="delete_btn">Удалить</button>
+                            </div>
+                        </div>
+                                      <div class="row">
+                            <div class="cell" data-title="Name">
+                                1.6 MT Ambiente 85 л.с. МКПП
+                                <p class="dop">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</p>
+                            </div>
+                            <div class="cell" data-title="Year">
+                                2012
+                            </div>
+                            <div class="cell" data-title="Color">
+                                <span class="status status_black"></span>
+                            </div>
+                            <div class="cell" data-title="Status">
+                               Ожидается
+                            </div>
+                             <div class="cell" data-title="Price">
+                                <span class="price">1 689 000 </span> руб.
+                            </div>
+                             <div class="cell" data-title="Delete">
+                                <button class="delete_btn">Удалить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table table_mobile">
+      <div class="row_mobile">
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile cell_mobile--name" data-title="Name">
+                1.6 MT Ambiente 85 л.с. МКПП
+               
+            </div>
+            
+            <div class="cell_mobile cell_mobile--color" data-title="Color">
+                <span class="status status_white"></span>
+            </div>
+            <div class="cell_mobile cell_mobile--price" data-title="Price">
+                <span class="price">1 689 000 </span> руб.
+            </div>
+        </div> 
+        <div class="row_mobile__wrap"> 
+            <div class="cell_mobile cell_mobile--option" data-title="Dop">
+                
+                <p class="dop">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</p>
+            </div>
+        </div>
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile cell_mobile--year" data-title="Year">
+                2012
+            </div>
+       
+            <div class="cell_mobile cell_mobile--status" data-title="Status">
+                Ожидается
+            </div>
+     
+            <div class="cell_mobile cell_mobile--delete" data-title="Delete">
+                <button class="delete_btn">Удалить</button>
+            </div>
+        </div>
+    </div>
+     <div class="row_mobile">
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile" data-title="Name">
+                1.6 MT Ambiente 85 л.с. МКПП
+               
+            </div>
+               <div class="cell_mobile" data-title="Color">
+                <span class="status status_black"></span>
+            </div>
+                   <div class="cell_mobile" data-title="Price">
+                <span class="price">1 689 000 </span> руб.
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Dop">
+                
+                <p class="dop"></p>
+            </div>
+        </div>
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile" data-title="Year">
+                2012
+            </div>
+         
+            <div class="cell_mobile" data-title="Status">
+                Ожидается
+            </div>
+
+            <div class="cell_mobile" data-title="Delete">
+                <button class="delete_btn">Удалить</button>
+            </div>
+        </div>
+    </div>
+    <div class="row_mobile">
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile" data-title="Name">
+                1.6 MT Ambiente 85 л.с. МКПП
+             
+            </div>
+               <div class="cell_mobile" data-title="Color">
+                <span class="status status_green"></span>
+            </div>
+                   <div class="cell_mobile" data-title="Price">
+                <span class="price">1 689 000 </span> руб.
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Dop">
+                
+                <p class="dop"></p>
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Year">
+                2012
+            </div>
+         
+            <div class="cell_mobile" data-title="Status">
+                Ожидается
+            </div>
+     
+            <div class="cell_mobile" data-title="Delete">
+                <button class="delete_btn">Удалить</button>
+            </div>
+        </div>
+    </div>
+    <div class="row_mobile">
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile" data-title="Name">
+                1.6 MT Ambiente 85 л.с. МКПП
+             
+            </div>
+               <div class="cell_mobile" data-title="Color">
+                <span class="status status_red"></span>
+            </div>
+                   <div class="cell_mobile" data-title="Price">
+                <span class="price">1 689 000 </span> руб.
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Dop">
+                
+                <p class="dop"></p>
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Year">
+                2012
+            </div>
+         
+            <div class="cell_mobile" data-title="Status">
+                Ожидается
+            </div>
+     
+            <div class="cell_mobile" data-title="Delete">
+                <button class="delete_btn">Удалить</button>
+            </div>
+        </div>
+    </div>
+    <div class="row_mobile">
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile" data-title="Name">
+                1.6 MT Ambiente 85 л.с. МКПП
+             
+            </div>
+               <div class="cell_mobile" data-title="Color">
+                <span class="status status_gray"></span>
+            </div>
+                   <div class="cell_mobile" data-title="Price">
+                <span class="price">1 689 000 </span> руб.
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Dop">
+                
+                <p class="dop"></p>
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Year">
+                2012
+            </div>
+         
+            <div class="cell_mobile" data-title="Status">
+                Ожидается
+            </div>
+     
+            <div class="cell_mobile" data-title="Delete">
+                <button class="delete_btn">Удалить</button>
+            </div>
+        </div>
+    </div>
+    <div class="row_mobile">
+        <div class="row_mobile__wrap">
+            <div class="cell_mobile" data-title="Name">
+                1.6 MT Ambiente 85 л.с. МКПП
+             
+            </div>
+               <div class="cell_mobile" data-title="Color">
+                <span class="status status_black"></span>
+            </div>
+                   <div class="cell_mobile" data-title="Price">
+                <span class="price">1 689 000 </span> руб.
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Dop">
+                
+                <p class="dop"></p>
+            </div>
+        </div>
+        <div class="row_mobile__wrap">    
+            <div class="cell_mobile" data-title="Year">
+                2012
+            </div>
+         
+            <div class="cell_mobile" data-title="Status">
+                Ожидается
+            </div>
+     
+            <div class="cell_mobile" data-title="Delete">
+                <button class="delete_btn">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <footer class="blue_bg">
+            <div class="footer_text">
+                <p>© 2015 CAPTAIN QUACK</p>
+                <p>Десница тысячелетия и моллюск! </p>
+            </div>
+        </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+.select-container 
+  // float: left
+  // width: 80%
+  perspective: 1000px
+  div.cube-side 
+
+    // height: 40px
+    width: 100%
+    &:nth-child(1) 
+      transform: rotateX(0deg) translateZ(30px)
+    
+    &:nth-child(2) 
+      transform: rotateX(-90deg) translateZ(30px)
+    
+  
+  div.cube 
+    transform: translateZ(-30px)
+    transform-style: preserve-3d
+    // height: 40px
+    transition: all 0.35s
+    &.rotate 
+      transform: translateZ(-30px) rotateX(90deg)
+    
+  
+
+.select-hidden 
+  display: none
+  visibility: hidden
+
+.select 
+  // border: #dcdcdc solid 1px
+  // border-bottom:#dcdcdc solid 2px
+  // text-indent: 5px
+  // &:focus,&:active
+  //   border: #dcdcdc solid 1px
+  //   outline: none
+
+.select-styled 
+  border: #dcdcdc solid 1px
+  border-bottom: #dcdcdc solid 2px
+  text-indent: 5px
+  font-family: $default-font
+  height: 28px
+  padding: 10px 0px 0 0
+  color: $gray
+  font-size: 12px 
+  &:focus,&:active
+  //  border-bottom: #000 solid 2px
+    outline: none
+           
+  // &:before 
+  //   content: ''
+  //   height: 7px
+  //   background: $green
+  //   width: 100%
+  //   display: block
+  //   position: absolute
+  //   left: 0
+  //   bottom: 0
+  //   transition: all 0.1s
+  //   transition-delay: 0.17s
+  //   -webkit-transition-delay: 0.17s
+  
+  // &.active:before 
+  //   background: $blue
+  //   height: 2px
+  //   transition-delay: 0s
+  //   -webkit-transition-delay: 0s
+  
+  &:after 
+    content: ""
+    width: 15px
+    height: 15px
+    position: absolute
+    top: 19px
+    right: 15px
+    line-height: 30px
+    background: url(../img/select_arr.svg) no-repeat 
+   
+  
+ 
+  
+.select-styled:hover
+  border-bottom: $red solid 2px
+.select-styled:focus,.select-styled:active
+ //   border-bottom: #000 solid 3px
+//    outline: none
+  
+.select-options 
+  //display: none
+ 
+  font-size: 12px
+  position: absolute
+  top: 39px
+  right: 0
+  left: 0
+  z-index: 999
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: #fff
+  border:
+  
+    right: #dcdcdc solid 1px
+    left: #dcdcdc solid 1px
+  li 
+    display: block
+    margin: 0
+    padding: 0 10px
+    background: #fff
+    margin-bottom: 2px
+    line-height: 30px
+    position: relative
+    opacity: 0
+    cursor: pointer
+
+    &:first-child 
+      border-top: 2px solid #000
+    &:last-child 
+      border-bottom: #dcdcdc solid 1px
+    
+    &:hover 
+      color:#000
+
+      
+    
+    &[rel=""] 
+      display: none
+    
+  
+
+
+  
+  
+

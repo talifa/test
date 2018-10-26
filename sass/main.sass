@@ -1,0 +1,314 @@
+@import "vars"
+@import "select"
+@import "libs"
+
+::placeholder
+	color: #999
+
+::selection
+	background-color: $accent
+	color: #fff
+* 
+	margin: 0
+	padding: 0
+html,body
+	height: 100%	
+.invisible 
+	visibility: hidden
+button
+	font-family: $default-font !important
+	font-size: 14px
+body
+	font-size: 12px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-weight: 400 
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+		
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+			
+.wrapper
+	position: relative
+	min-height: 100% 
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: 700
+
+.container 
+	max-width: 	958px
+	width: 100%
+	margin: 0 auto	
+	padding:
+		bottom: 200px	
+		top: 70px	
+	h1
+		font-size: 42px	
+		padding: 
+			bottom: 20px
+
+	.form 
+		margin-bottom: 100px
+		.block
+			display: flex	
+			justify-content: space-between
+			margin-bottom: 10px
+			
+		
+			input,button
+				font-family: $default-font
+				height: 40px
+				text-indent: 10px
+				padding: 10px 0
+				width: 100%	
+				color: $gray
+				font-size: 12px	
+				
+				
+			
+						
+			.input_wrapper
+				margin:
+					left: 15px
+				
+				font-family: $default-font
+				width: 100%	
+				color: $gray
+				font-size: 12px	
+				
+				
+				.colors
+						margin:
+							top: 10px
+				
+				input
+								
+					
+					height: 20px	
+					border: #dcdcdc solid 1px
+					border-bottom:#dcdcdc solid 2px
+					margin:
+						top: 10px
+					
+			
+			
+
+			.btn 
+				border: 	$red 2px solid
+				border-radius: 4px 	  
+				background: 	$red 
+				color: 	#fff
+				text-transform: uppercase	
+				font-weight: 500		
+				font-size: 16px	 
+				outline: none
+				height: 41px
+				text-indent: 0px
+				line-height: 16px
+				cursor: pointer
+				display: flex
+				-webkit-justify-content: center
+				justify-content: center
+				&:hover,&:active
+					background: #C40901
+					color: #f4f4f4 
+				i
+					margin-left: 10px
+					margin-top: 2px
+					width: 20px	
+					height: 20px
+					//float: left
+					
+					
+					
+					background: 	url(../img/arrow_btn.svg) no-repeat
+			// .select2
+			// 	border: #dcdcdc solid 1px
+			// 	border-bottom:#dcdcdc solid 2px
+			// 	text-indent: 5px
+			// 	&:focus,&:active
+			// 		border: #dcdcdc solid 1px
+			// 		outline: none
+			// 	option
+			// 		height: 40px	
+			// 		background-color: 	transparent 
+			// 		outline: none
+				
+			.input:hover
+				border-bottom: $red solid 2px
+				&:focus,&:active
+					border-bottom: #000 solid 2px
+
+
+.blue_bg 
+	background-color: 	#282d30
+	height: 100px	
+	width: 100%	 
+	
+footer 
+	position: absolute
+	left: 0
+	bottom: 0
+	color: #fff
+	.footer_text 
+		margin: 0 auto
+		text-align: center
+		padding: 30px
+		font-size: 11px
+header
+
+	.logo
+		position: relative	
+		display: block	
+		height: 110px
+		top: 5px	
+		background: 	url(../img/duck.png) no-repeat center 0.5%
+
+.table-wrapper
+	padding-left: 20px
+	
+	h2 
+		position: relative
+		margin-bottom: 20px
+		text-transform: uppercase
+		font-size: 20px
+		vertical-align: middle
+		
+		span 
+			display: inline-block
+			width: 12px
+			height: 17px
+			
+			border-left: 3px solid #8b9497      
+.table
+
+	//border-radius: 4px 4px 0 0 
+	color: #323232
+	font-size: 15px
+	width: 100%
+	font-weight: 300 
+	box-shadow: 0 1px 3px rgba(0,0,0,0)
+	display: table
+	border-collapse: collapse
+	border: none
+	max-width: 100%
+	// white-space: nowrap
+
+ 
+	@media screen and (max-width: 580px)
+		display: block
+.table .row:last-child .cell:first-child
+	border-bottom-left-radius: 4px
+.table .row:last-child .cell:last-child 
+	border-bottom-right-radius: 4px
+.header .cell:first-child 
+	border-radius: 4px 0 0 0
+.header .cell:last-child 
+	border-radius: 0px 4px 0px 0
+.row_mobile
+	
+	
+	
+.row
+	display: table-row
+	background: #f5f6f6
+	border-top: #dcdcdc solid 1px
+
+	&.header
+		
+		font-weight: 500
+			
+		color: #ffffff
+		background: $red
+		border: transparent solid 1px
+		text-align: left
+	&.green
+		background: #27ae60
+	&.blue
+		background: #2980b9
+
+.cell
+	padding: 10px 10px
+	display: table-cell
+	vertical-align: middle
+	
+	
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+	.dop
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+
+	&:first-child
+		text-align: left  
+		max-width: 0
+		width: 100% 
+		// min-width: 270px
+	&:last-child
+		// width: 100%
+
+p.dop
+	color: #8b9497
+	font-size: 13px
+		
+span.status 
+	border-radius: 50%
+	display: inline-block
+	width: 20px
+	height: 20px 
+	border: #dcdcdc solid 1px
+	text-align: center
+// .cell:first-child 
+// 	text-align: left	
+.status_black
+	background-color: #000
+.status_white
+	background-color: #fff
+.status_gray
+	background-color: #cbcbcc
+.status_red
+	background-color: #d74345
+.status_green	
+	background-color: #88c504
+.delete_btn 
+	border: 1px solid transparent
+	background: transparent
+	padding: 5px 15px
+	margin: 5px
+	color: #8b9497
+	font-weight: 400 
+	outline: none
+	cursor: pointer
+
+	&:hover
+		color: white
+		background: #000
+		border-radius: 100px
+		display: inline-block
+	&:active
+		color: #Ccc 
+.table_mobile 
+	display: none		
+.cell[data-title="Color"]
+	text-align: center 
+@import "media" // Always at the end
